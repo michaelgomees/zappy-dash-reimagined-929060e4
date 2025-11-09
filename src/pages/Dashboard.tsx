@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { MainLayout } from "@/components/layouts/MainLayout";
 import { 
   MessageSquare, 
   Users, 
@@ -78,7 +79,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <MainLayout>
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
@@ -139,7 +140,7 @@ const Dashboard = () => {
           </div>
         </Card>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 
